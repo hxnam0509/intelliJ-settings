@@ -1,0 +1,74 @@
+<templateSet group="ClosureTemplates">
+  <template name="{namespace" value="{namespace $NAME$}$END$" description="Package namespace declaration" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{alias" value="{alias $NAME$ as $END$}" description="Alias declaration" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{element" value="{element $NAME$}$END${/element}" description="Element definition" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{template" value="{template $NAME$}$END${/template}" description="Template definition" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{deltemplate" value="{deltemplate $NAME$}$END${/deltemplate}" description="Deltemplate definition" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{let}{/let}" value="{let $NAME$ kind=&quot;$KIND$&quot;}$END${/let}" description="Let declaration" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="KIND" expression="complete()" defaultValue="&quot;text&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="{slet/}" value="{let $NAME$: $END$ /}" description="Let declaration self-closing" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{param}{/param}" value="{param $NAME$ kind=&quot;$KIND$&quot;}$END${/param}" description="Template parameter" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="KIND" expression="complete()" defaultValue="&quot;text&quot;" alwaysStopAt="true" />
+  </template>
+  <template name="{sparam/}" value="{param $NAME$: $END$ /}" description="Template parameter self-closing" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{@param" value="{@param $NAME$: $TYPE$}$END$" description="Parameter definition" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{@state" value="{@state $NAME$ := $VALUE$}$END$" description="State property definition" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{call}{/call}" value="{call $NAME$}$END${/call}" description="Template call" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{scall/}" value="{call $NAME$ /}$END$" description="Template call self-closing" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{delcall}{/delcall}" value="{delcall $NAME$}$END${/delcall}" description="Deltemplate call" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{sdelcall/}" value="{delcall $NAME$ /}$END$" description="Deltemplate call self-closing" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{xid('')}" value="{xid('$ID$')}$END$" description="Xid function call" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="ID" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{css('')}" value="{css('%$NAME$')}$END$" description="Css function call" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{literal" value="{literal}$END${/literal}" description="Literal block" toReformat="false" toShortenFQNames="true" deactivated="true" />
+  <template name="{msg" value="{msg desc=&quot;$DESC$&quot;}$END${/msg}" description="Message" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="DESC" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{velog" value="{velog $IDENT$}$END${/velog}" description="Velog" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="IDENT" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{foreach" value="{foreach $OPERAND$ in $OPERANDS$}$END${/foreach}" description="Foreach loop" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="OPERAND" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="OPERANDS" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{if" value="{if $CONDITION$}$END${/if}" description="If condition" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="CONDITION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  </template>
+  <template name="{ifelse" value="{if $CONDITION$}$END${else}{/if}" description="If-else condition" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <variable name="CONDITION" expression="complete()" defaultValue="" alwaysStopAt="true" />
+  </template>
+</templateSet>
